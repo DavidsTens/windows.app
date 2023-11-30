@@ -1,20 +1,54 @@
 @import url(https://db.onlinewebfonts.com/c/9eb5b7e8afb18f98b00594b9e758b378?family=Sitka+Display);
 @import url(https://db.onlinewebfonts.com/c/7a8bc7c29b5bcadb9510cca51210ac46?family=Sitka+Banner);
-h3 {
-    font-size: 35px;
-    background: linear-gradient(95deg, red, orange, yellow, green, blue, indigo, violet);
-    background-size: 600%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: slide 7s linear infinite;
+    span.head {
+        font-size: 35px;
+        background: radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet);
+        background-size: 600%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: slide 70s linear infinite;
+        display: inline-block;
+        padding-top: 30px;
+        padding-left: 35px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+span.main {
+    font-size: 70px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 35px;
+    color: #FFF;
 }
 
 @keyframes slide {
     0% { background-position: 0%; }
-    100% { background-position: 500%; }
+    100% { background-position: 200%; }
 }
 
 body
 {       
-    background-color: rgb(26, 26, 26);
+    background-color: #1b1b1b;
+}
+.theme-switcher {
+    background-color: #444;
+    padding: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+        margin-top: 30px;
+    width: 76px; /* Ширина бокса */
+    height: 38px; /* Высота бокса */
+}
+
+.theme-switcher img {
+    width: 46%; /* Ширина изображения равна ширине бокса */
+    height: auto; /* Высота изображения подстраивается под ширину, сохраняя пропорции */
 }
