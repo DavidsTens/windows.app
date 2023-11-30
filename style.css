@@ -1,0 +1,20 @@
+@import url(https://db.onlinewebfonts.com/c/9eb5b7e8afb18f98b00594b9e758b378?family=Sitka+Display);
+@import url(https://db.onlinewebfonts.com/c/7a8bc7c29b5bcadb9510cca51210ac46?family=Sitka+Banner);
+h3 {
+    font-size: 35px;
+    background: linear-gradient(95deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slide 7s linear infinite;
+}
+
+@keyframes slide {
+    0% { background-position: 0%; }
+    100% { background-position: 500%; }
+}
+
+body
+{       
+    background-color: rgb(26, 26, 26);
+}
