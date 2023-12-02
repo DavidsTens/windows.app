@@ -1,5 +1,10 @@
-@import url(https://db.onlinewebfonts.com/c/9eb5b7e8afb18f98b00594b9e758b378?family=Sitka+Display);
-@import url(https://db.onlinewebfonts.com/c/7a8bc7c29b5bcadb9510cca51210ac46?family=Sitka+Banner);
+@import url('https://fonts.cdnfonts.com/css/british-council-sans');
+@import url('https://fonts.cdnfonts.com/css/min-sans');
+@import url('https://fonts.cdnfonts.com/css/acephimere');
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-variable');
+@import url('https://fonts.cdnfonts.com/css/roboto');
+                
+
     span.head {
         font-size: 35px;
         background: radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet);
@@ -8,10 +13,16 @@
         -webkit-text-fill-color: transparent;
         animation: slide 70s linear infinite;
         display: inline-block;
+        font-family: 'Acephimere', sans-serif;
         padding-top: 30px;
         padding-left: 35px;
     }
 
+    span
+    {
+        font-family: 'Segoe UI Variable', sans-serif;   
+        font-family: 'Min Sans', sans-serif;                                                                             
+    }
     .header {
         display: flex;
         justify-content: flex-start;
@@ -19,7 +30,17 @@
     }
 
 span.main {
-    font-size: 70px;
+    font-size: 40px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: calc(1vw + 10px);
+    margin-bottom: 15px;
+    margin-left: calc(1vw + 35px);
+    color: #FFF;
+}
+
+span.main.info {
+    font-size: 30px;
     display: inline-block;
     margin-top: 5px;
     margin-right: 10px;
@@ -32,10 +53,14 @@ span.main {
     100% { background-position: 200%; }
 }
 
-body
-{       
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #1b1b1b;
 }
+
 .theme-switcher {
     background-color: #444;
     padding: 2px;
@@ -51,4 +76,57 @@ body
 .theme-switcher img {
     width: 46%; /* Ширина изображения равна ширине бокса */
     height: auto; /* Высота изображения подстраивается под ширину, сохраняя пропорции */
+}
+
+.image-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw; /* Увеличьте размер контейнера, как вам нужно */
+    padding-top: 35vh; /* Установите это значение равным ширине для получения квадратного контейнера */
+    margin-right: calc(100px - 20vw);
+    margin-left: calc(100px - 20vw);
+    overflow: hidden;
+}
+
+.image-box img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; box-shadow: 0.3s ease-in-out;
+}
+
+.inner-shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.image-box:hover .inner-shadow {
+    box-shadow: inset 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 -10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.image-box:hover img {
+    transform: scale(1.2);
+}
+
+.image-box .image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-family: 'Roboto Black', sans-serif;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
