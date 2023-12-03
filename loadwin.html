@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <span class="head">windows.app</span>
+        <div class="theme-switcher">
+            <img id="dark-theme" src="https://img.icons8.com/windows/100/do-not-disturb-2.png" alt="do-not-disturb-2"/>
+            <img id="light-theme" src="https://img.icons8.com/windows/100/sun--v1.png" alt="sun--v1"/>
+        </div>
+    </div>
+    <script>
+    document.getElementById('dark-theme').addEventListener('click', function() {
+        document.body.style.backgroundColor = '#1b1b1b';
+        document.querySelector('span.main').style.color = '#FFF';
+        document.querySelector('.theme-switcher').style.backgroundColor = 'rgba(68, 68, 68, 1)'; // #444 with full opacity
+    });
+
+    document.getElementById('light-theme').addEventListener('click', function() {
+        document.body.style.backgroundColor = '#FFF';
+        document.body.style.color = '#000';
+        document.querySelector('span.main').style.color = '#000';
+        document.querySelector('.theme-switcher').style.backgroundColor = 'rgba(68, 68, 68, 0.2)'; // #444 with 50% opacity
+    });
+    </script>
+    <!-- Your content goes here -->
+</body>
+</html>
