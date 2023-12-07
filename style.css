@@ -7,7 +7,7 @@
 
     span.head {
         font-size: 35px;
-        background: radial-gradient(circle, red, orange, yellow, green, rgb(147, 147, 255), rgb(120, 0, 206), violet);
+        background: radial-gradient(circle, red, orange, yellow, rgb(23, 199, 23), rgb(147, 147, 255), rgb(120, 0, 206), violet);
         background-size: 600%;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
