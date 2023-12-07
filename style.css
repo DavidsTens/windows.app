@@ -85,8 +85,8 @@ body {
     align-items: center;
     width: 98vw; /* Увеличьте размер контейнера, как вам нужно */
     padding-top: 35vh; /* Установите это значение равным ширине для получения квадратного контейнера */
-    margin-right: calc(70px - 20vw);
-    margin-left: calc(70px - 20vw);
+    margin-right: calc(80px - 20vw);
+    margin-left: calc(80px - 20vw);
     overflow: hidden;
 }
 
