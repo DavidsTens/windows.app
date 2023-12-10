@@ -183,8 +183,8 @@ body {
     display: flex;
     position: relative;
     order: 2;
-    margin-bottom: 10vh;
-    margin-left: 3vh;
+    margin-bottom: 60px;
+    margin-left: 20px;
 }
 .text-container {
     display: flex;
