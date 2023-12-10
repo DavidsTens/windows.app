@@ -100,6 +100,28 @@ body {
     transition: transform 0.3s ease-in-out; box-shadow: 0.3s ease-in-out;
 }
 
+
+.image-box-page {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    width: 100vw; /* Увеличьте размер контейнера, как вам нужно */
+    padding-top: 35vh; /* Установите это значение равным ширине для получения квадратного контейнера */
+    margin-right: calc(80px - 20vw);
+    margin-left: calc(80px - 20vw);
+    overflow: hidden;
+    margin-top: 3vh;
+}
+
+.image-box-page > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
 .inner-shadow {
     position: absolute;
     top: 0;
@@ -129,4 +151,45 @@ body {
     font-size: 40px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.image-box-page .image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-family: 'Roboto Black', sans-serif;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    order: 1;
+}
+
+.author .author-text {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.author {
+    display: flex;
+    position: relative;
+    order: 2;
+    margin-bottom: 10vh;
+    margin-left: 3vh;
+}
+.text-container {
+    display: flex;
+}
+.author .author-icon {
+    width: 24px;
+    height: auto;
 }
