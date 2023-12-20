@@ -106,7 +106,7 @@ body {
     display: flex;
     align-items: flex-start;
     width: 100vw; /* Увеличьте размер контейнера, как вам нужно */
-    padding-top: 35vh; /* Установите это значение равным ширине для получения квадратного контейнера */
+    padding-top: 45vh; /* Установите это значение равным ширине для получения квадратного контейнера */
     margin-right: calc(80px - 20vw);
     margin-left: calc(80px - 20vw);
     overflow: hidden;
@@ -181,10 +181,10 @@ body {
 
 .author {
     display: flex;
-    position: relative;
+    position: absolute;
     order: 2;
-    margin-bottom: 60px;
-    margin-left: 20px;
+    bottom: 60px;
+    left: 20px;
 }
 .text-container {
     display: flex;
