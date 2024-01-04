@@ -234,17 +234,18 @@ body {
 
     }
 
-.grey-inner-box {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 20%;
-        background-color: rgba(0, 0, 0, 0.5);
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
+    .grey-inner-box {
+    position: sticky;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: calc(80px - 20vw);
+    margin-left: calc(80px - 20vw);
+}
+
     .inner-box-text {
         color: white;
         font-size: 19px;
@@ -252,4 +253,14 @@ body {
         position: absolute;
         font-family: 'Segoe Pro', sans-serif;
         font-weight: 700;
+    }
+
+    .scroll-back-icon {
+        position: sticky;
+        left: 100%;
+        display: flex;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        margin-right: 5px;
     }
