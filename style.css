@@ -224,8 +224,8 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 98vw; /* Увеличьте размер контейнера, как вам нужно */
-        padding-top: 25vh; /* Установите это значение равным ширине для получения квадратного контейнера */
+        width: 98vw;
+        padding-top: 25vh;
         margin-right: calc(80px - 20vw);
         margin-left: calc(80px - 20vw);
         margin-bottom: 10px;
