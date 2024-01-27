@@ -1,7 +1,7 @@
 var addPageIcon = document.querySelector('.add-page-icon');
 if (addPageIcon) {
     addPageIcon.addEventListener('click', function () {
-        // Создаем контейнер для textInput
+// Создаем контейнер для textInput
         var textInputContainer = document.createElement('div');
         textInputContainer.className = 'text-input-container'; // Добавляем класс для стилизации
         // Создаем первый элемент для ввода текста
@@ -32,7 +32,4 @@ if (addPageIcon) {
             greyBox.appendChild(newElementsContainer);
         }
     });
-}
-else {
-    console.error('Element with class "add-page-icon" not found.');
 }

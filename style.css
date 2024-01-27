@@ -275,17 +275,25 @@ body {
 
     .text-input-container {
         display: inline-grid;
-        gap: 10px;
+        gap: 5px;
         position: absolute;
-        bottom: 20px;
-        left: 40px;
+        bottom: 10%;
+        left: 3%;
     }
     
-    .text-input {
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
+    input {
+        padding: 5px;
+        border: 2.5px solid #2990cc;
+        background-color: #1b1b1b;
+        height: 20px;
+        width: 162px;
+        color: white;
+        font-family: monospace;
+    }
+    
+    
+    input:focus {
+        outline: none;
     }
 
     .image-box-custom {
@@ -294,10 +302,10 @@ body {
         background-color: #555;
         position: absolute;
         left: 40px;
-        top: 30px;
+        top: 20px;
     }
 
     .new-elements-container {
-        display: inline-block;
         margin-left: 50px;
+        display: inline-block;
     }
